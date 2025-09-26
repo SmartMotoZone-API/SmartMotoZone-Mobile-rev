@@ -8,10 +8,10 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>SmartMotoZone 🚀</Text>
 
-      <Button title="📋 Detalhes" onPress={() => router.push("/Detalhes")} />
-      <Button title="⚙️ Configurações" onPress={() => router.push("/Configuracoes")} />
-      <Button title="✏️ Editar Moto" onPress={() => router.push("/Editar")} />
-      <Button title="🗺️ Ver Mapa" onPress={() => router.push("/Mapa")} />
+      <Button title="📋 Detalhes" onPress={() => router.push("/detalhes")} />
+      <Button title="⚙️ Configurações" onPress={() => router.push("/configuracoes")} />
+      <Button title="✏️ Editar Moto" onPress={() => router.push("/editar")} />
+      <Button title="🗺️ Ver Mapa" onPress={() => router.push("/mapa")} />
     </View>
   );
 }
