@@ -25,17 +25,18 @@ export default function HomeScreen() {
   const [motos, setMotos] = useState<Moto[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const carregarMotos = async () => {
-    try {
-      setLoading(true);
-      const response = await api.get("/api/motos");
-      setMotos(response.data);
-    } catch (error) {
-      alert("Erro ao carregar as motos 🚨");
-    } finally {
-      setLoading(false);
-    }
-  };
+ const carregarMotos = async () => {
+  try {
+    setLoading(true);
+    const response = await api.get("/api/motos");
+    setMotos(response.data.content); // ⚠️ usa .content porque a API retorna um Page<Moto>
+  } catch (error: any) {
+    console.log("ERRO API:", error.message);
+    alert("Erro ao carregar as motos 🚨");
+  } finally {
+    setLoading(false);
+  }
+};
 
   useEffect(() => {
     carregarMotos();
