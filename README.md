@@ -1,51 +1,73 @@
-# Welcome to your Expo app 👋
+# 🚀 SmartMotoZone
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O **SmartMotoZone** é um aplicativo mobile desenvolvido em **React Native com Expo**, criado para otimizar o **mapeamento inteligente e a gestão de motos em pátios de múltiplas filiais** da Mottu.  
+A solução permite o controle visual das zonas de estacionamento (A1, B1, C2...) e o gerenciamento de informações de cada moto, integrando-se a uma **API REST Java (Spring Boot)**.
 
-## Get started
+---
 
-1. Install dependencies
+## 🧠 Visão Geral
+
+O projeto tem como objetivo fornecer uma ferramenta digital para:
+- Identificar e localizar motos em diferentes zonas de pátio.
+- Permitir atualização de status e zona via formulário dinâmico.
+- Integrar-se à **API SmartMotoZone-Java** para obter e registrar dados reais.
+- Gerenciar as operações com temas personalizáveis e armazenamento local persistente.
+
+---
+
+## 📱 Funcionalidades Principais
+
+✅ **Mapeamento por Zonas** — Exibição visual das motos conforme suas zonas (A1, A2, B1...).  
+✅ **CRUD de Motos** — Criar, listar, atualizar e remover motos (via API).  
+✅ **Tema Claro/Escuro** — Interface adaptável ao gosto do usuário.  
+✅ **Formulário Reativo** — Edição e salvamento dinâmico de dados.  
+✅ **Persistência Local** — Armazena preferências e dados com AsyncStorage.  
+✅ **Login e Cadastro de Usuário** — Integração com backend para autenticação.  
+✅ **Distribuição via Firebase App Distribution** — Deploy de versões de teste.  
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+### 🧱 Frontend (Mobile)
+- **React Native (Expo SDK 51+)**
+- **TypeScript**
+- **Expo Router** — Navegação entre telas
+- **Axios** — Comunicação com API
+- **AsyncStorage** — Armazenamento local persistente
+- **Context API + Hooks** — Tema e estado global
+- **Firebase App Distribution** — Distribuição de builds Android
+
+### ⚙️ Backend (API)
+- **Java 17**
+- **Spring Boot 3+**
+- **Spring Security (JWT)**
+- **Spring Data JPA**
+- **Hibernate**
+- **PostgreSQL**
+- **Swagger OpenAPI**
+
+---
+
+## 🧠 Como Executar o Projeto
+
+1. Instala as depedencias
 
    ```bash
    npm install
    npm install @react-native-async-storage/async-storage
    ```
 
-2. Start the app
+2. Comece o app com
 
    ```bash
    npx expo start
    ```
+A Api de Java é obtida nesse link: https://github.com/SmartMotoZone-API/SmartoMotoZone-Java
 
-In the output, you'll find options to open the app in a
+---
+## 👤 Integrantes 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Gabriel Yuji Suzuki - RM556588
+Lucas Felix Vassiliades - RM97677
+Luiz Eduardo Da Silva Pinto - RM555213
